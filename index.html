@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AION PIK</title>
-    <link rel="icon" href="logo1.jpeg" type="image/png"/>
+    <title>Nissan</title>
+    <link rel="icon" href="LOGO1.png" type="image/png"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -18,7 +18,7 @@
     </script>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family:  Arial, Helvetica, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f9; /* Warna latar belakang halaman */
@@ -41,6 +41,9 @@
         .heading h1 {
             font-size: 24px;
             color: #333;
+        }
+        .heading img {
+            width: 5%;
         }
         .models {
             display: flex;
@@ -140,8 +143,7 @@
         }
         
         .models-container {
-            background: linear-gradient(to bottom, white, #aefcf0);
-            text-align: center;
+           text-align: center;
             padding: 50px 20px;
         }
 
@@ -171,7 +173,6 @@
         }
 
         .models-container {
-            background: linear-gradient(to bottom, white, #aefcf0);
             text-align: center;
             padding: 50px 20px;
         }
@@ -301,6 +302,7 @@
 
         /* Simulasi Start */
         .simulasi-container {
+            
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -357,6 +359,10 @@
                 width: 100%;
             }
 
+            .heading img {
+            width: 10%;
+            }   
+
             .btn-primary {
                 height: 100%;
                 width: auto;
@@ -383,7 +389,46 @@
             }
         }
         /* Simulai End */
-        
+
+        /* Card */
+        /* Float four columns side by side */
+            .column {
+            float: left;
+            width: 25%;
+            margin-left: 60px;
+            margin-right: 60px;
+            margin-bottom: 20px;
+            padding: 0 10px;
+            }
+
+            /* Remove extra left and right margins, due to padding */
+            .row {margin: 0 -5px;}
+
+            /* Clear floats after the columns */
+            .row:after {
+            content: "";
+            clear: both;
+            }
+
+            /* Responsive columns */
+            @media screen and (max-width: 600px) {
+            .column {
+                width: 80%;
+                display: block;
+                margin-bottom: 20px;
+                margin-left: 40px;
+            }
+            }
+
+            /* Style the counter cards */
+            .card {
+            padding: 16px;
+            border:  transparent;
+            text-align: center;
+            background: transparent;
+            }
+            /* Card End */
+
         /* Map Start */
         .map-section {
             display: flex;
@@ -394,7 +439,7 @@
 
         .map-container {
             width: 50%;
-            height: 400px;
+            height: 500px;
             background: url('showroom.jpg') center/cover no-repeat;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -425,7 +470,7 @@
         .footer {
             background-color: #000;
             padding: 40px 0;
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
         }
         .footer-logo {
             width: 120px;
@@ -487,105 +532,155 @@
             transition: all 0.3s ease;
             text-align: center;
         }
+          
+  /* Navbar utama */
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+/* Logo di kiri */
+.logo img {
+  height: 50px;
+  display: block;
+}
+
+/* Menu kanan */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto; /* dorong menu ke kanan */
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #b30000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 12px;
+  }
+  .logo img {
+    height: 35px;
+  }
+}
+
+/* Tombol WhatsApp */
+  .whatsapp-float {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    z-index: 100;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
+  }
+
+  .popup i{
+    margin-bottom: 10%;
+  }
+
+  /* Animasi muncul */
+  @keyframes pop {
+    0% { transform: scale(0); opacity: 0; }
+    80% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); }
+  }
+
+  .whatsapp-float {
+    animation: pop 0.5s ease;
+  }
     </style>
 </head>
 <body>
     <header>
-        <div class="heading">
-            <img src="LOGO.png" style="width: 20%;">
-        </div>
-    </header>
+  <nav class="navbar">
+    <!-- Logo kiri -->
+    <div class="logo">
+      <a href="index.html"><img src="LOGO.png" alt="Logo" ></a>
+    </div>
+
+    <!-- Menu kanan -->
+    <ul class="nav-links">
+      <li><a href="index.html#carouselHero">Home</a></li>
+      <li><a href="index.html#pl">Pricelist</a></li>
+      <li><a href="index.html#promo">Promo</a></li>
+      <li><a href="#footerr">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
         <!-- Hero Carousel (Bagian Atas) -->
-    <section id="carouselHero" class="carousel slide carousel-hero" data-bs-ride="carousel" interval="3000s">
+    <section id="carouselHero" class="carousel slide carousel-hero" data-bs-ride="carousel" interval="2000s">
         <div class="carousel-inner">
             
             <div class="carousel-item">
-                <img src="Poster/AION-V.jpg" class="d-block w-100" alt="Hero Image 2">
+                <img src="banner.jpg" class="d-block w-100" alt="Hero Image 2">
             </div>
             <div class="carousel-item">
-                <img src="Poster/Poster-Design-Material-For-Mall.jpg" class="d-block w-100" alt="Hero Image 3">
+                <img src="banner3.jpg" class="d-block w-100" alt="Hero Image 3">
             </div>
             <div class="carousel-item">
-                <img src="UT/4.jpeg" class="d-block w-100" alt="Hero Image 4">
+                <img src="banner2.jpg" class="d-block w-100" alt="Hero Image 4">
             </div>
             <div class="carousel-item active">
-                <img src="Poster/Front.jpg" class="d-block w-100" alt="Hero Image 1">
+                <img src="banner1.jpg" class="d-block w-100" alt="Hero Image 1">
             </div>
         </div>
     </section>
-
-    <section class="flex items-center justify-center min-h-screen bg-gray-100 text-center px-4">
-        <div class="max-w-2xl bg-white p-8 rounded-2xl shadow-xl">
-          <h2 class="text-3xl font-bold text-gray-800 mb-4">
-            ⚡ Selamat Datang di <span class="text-blue-600">AION PIK</span>
-          </h2>
-          <p class="text-lg text-gray-600 italic mb-4">
-            Dealer Resmi Mobil AION – Premium, Futuristik, Ramah Lingkungan
-          </p>
-          <p class="text-gray-700 mb-6">
-            Temukan pengalaman berkendara masa depan hari ini. Mobil listrik canggih, desain elegan, dan teknologi mutakhir kini hadir di Pantai Indah Kapuk.
-          </p>
-          <ul class="list-style: none; padding-left: 0;" style="list-style: none;">
-            <li>✅ Dealer Resmi AION EV</li>
-            <li>✅ Test Drive Tersedia</li>
-            <li>✅ Cicilan Ringan & Promo Menarik</li>
-            <li>✅ Lokasi Strategis di PIK</li>
-          </ul>
-          <div class="flex justify-center gap-4">
-            <div class="button-container">
-                <a href="https://wa.me/6288213303992?text=Halo%20saya%20ingin%20test%20drive%20mobil%20%3A%0ANama%3A%0ANo. Telfon%3A%" target="_blank" class="test-drive-btn">🚗 Book a Test Drive</a>
-                </div>
-          </div>
-        </div>
-      </section>
-      
-      
         
     <!-- Models Carousel (Bagian Bawah) -->
-    <section class="models-container">
-        <h2 class="models-title">Jelajahi AION</h2>
-        <p class="models-subtitle">Temukan Produk Unggulan Kami</p>
+    <section class="models-container" id="promo">
+        <h2 class="models-title">Promo Nissan</h2>
         <div id="carouselModels" class="carousel slide carousel-models" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="carousel-slide">
-                        <img src="index/v1.jpg" alt="AION V">
-                        <div class="carousel-caption">
-                            <h3>AION V</h3>
-                            <p>75.3kWh | 600+ Km</p>
-                            <a href="v.html" class="btn-primary">Jelajahi</a>
-                        </div>
+                        <img src="promo/serena.jpg" alt="AION V">
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="carousel-slide">
-                        <img src="index/aion-y-plus green.png" alt="AION Y Plus">
-                        <div class="carousel-caption">
-                            <h3>AION Y Plus</h3>
-                            <p>60.5kWh | 410 Km</p>
-                            <a href="Y+.html" class="btn-primary">Jelajahi</a>
-                        </div>
+                        <img src="promo/kicks.jpg" alt="AION Y Plus">
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="carousel-slide">
-                        <img src="index/HT-maroon.png" alt="HYPTEC HT">
-                        <div class="carousel-caption">
-                            <h3>HYPTEC HT</h3>
-                            <p>83 kWh | 600++ Km</p>
-                            <a href="HT.html" class="btn-primary">Jelajahi</a>
-                        </div>
+                        <img src="promo/livina.jpg" alt="HYPTEC HT">
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="carousel-slide">
-                        <img src="ut/image-removebg-preview (5).png" alt="HYPTEC HT">
-                        <div class="carousel-caption">
-                            <h3>AION UT</h3>
-                            <p style="color: black;">COMING SOON</p>
-                            <a href="UT.html" class="btn-primary">Jelajahi</a>
-                        </div>
+                        <img src="promo/magnite.jpg" alt="HYPTEC HT">
+                    </div>
+                </div>
+            <div class="carousel-item">
+                    <div class="carousel-slide">
+                        <img src="promo/terra.jpg" alt="HYPTEC HT">
                     </div>
                 </div>
             </div>
@@ -600,39 +695,137 @@
         </div>
     </section>
 
-    <div class="simulasi-container">
-        <section class="simulasi">
-            <div class="simulasi-info">
-                <h2>Simulasi Kredit</h2>
-                <p>Hitung cicilan bulanan dan temukan mobil terbaik sesuai dengan anggaran Anda!</p>
-                <div class="button-container">
-                    <a href="simulasi.html" class="simulasi-btn"> Lihat Simulasi</a>
-                </div>
-            </div>
-        </section>
-        <section class="benefit">
-            <div class="benefit-info">
-                <h2>Benefit</h2>
-                <p>Dapatkan keuntungan tambahan dari pembelian kendaraan Anda!</p>
-                <div class="button-container">
-                    <a href="#" class="simulasi-btn"> Lihat Benefit</a>
-                </div>
-            </div>
-        </section>
-    </div>
+    <section id="pl">
+    <h1 style="justify-self: center; font-size: 28px; font-weight: bold; margin-bottom: 10px; color: #b30000;">Nissan</h1>
+<!-- Card -->
 
+  <div class="column">
+    <div class="card">
+        <img src="pricelist/serena epower.png" alt="HYPTEC HT">
+      <h3>Serena E-Power</h3>
+      <p>Rp 655.000.000</p>
+      <a href="serena.html" class="siulasi-btn">Selengkapnya  ></a>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+        <img src="pricelist/livina.png" alt="HYPTEC HT">
+      <h3>Livina</h3>
+      <p>Rp 331.000.000</p>
+      <a href="livina.html" class="siulasi-btn">Selengkapnya  ></a>
+    </div>
+  </div>
+
+<div class="column">
+    <div class="card">
+        <img src="pricelist/xtrail epower.png" alt="HYPTEC HT">
+      <h3>X-Trail E-Power</h3>
+      <p>795.000.000</p>
+      <a href="xtrail.html" class="siulasi-btn">Selengkapnya  ></a>
+    </div>
+  </div>
+
+<div class="column">
+    <div class="card">
+        <img src="pricelist/terra.png" alt="HYPTEC HT">
+      <h3>Terra</h3>
+      <p>789.000.000</p>
+      <a href="terra.html" class="siulasi-btn">Selengkapnya  ></a>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+        <img src="pricelist/kicks epower.png" alt="HYPTEC HT">
+      <h3>Kicks E-Power</h3>
+      <p>522.600.000</p>
+      <a href="kicks.html" class="siulasi-btn">Selengkapnya  ></a>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+        <img src="pricelist/magnite.png" alt="HYPTEC HT">
+      <h3>Magnite</h3>
+      <p>310.500.000</p>
+      <a href="magnite.html" class="siulasi-btn">Selengkapnya  ></a>
+    </div>
+  </div>
+</div>
+  <!-- Card End -->
+</section>
+
+<section id="pl">
+    <br>
+    <br>
+    <br>
+    <h1 style="justify-self: center; font-size: 28px; font-weight: bold; margin-bottom: 10px; color: #b30000;">GAC AION</h1>
+<!-- Card -->
+
+  <div class="column">
+    <div class="card">
+        <img src="aion/ht.png" alt="HYPTEC HT">
+      <h3>HYPTEC HT</h3>
+      <p>Rp 691.000.000</p>
+      <a href="HT.html" class="siulasi-btn">Selengkapnya  ></a>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+        <img src="aion/v.webp" alt="HYPTEC HT">
+      <h3>Aion V</h3>
+      <p>Rp 489.000.000</p>
+      <a href="v.html" class="siulasi-btn">Selengkapnya  ></a>
+    </div>
+  </div>
+
+<div class="column">
+    <div class="card">
+        <img src="aion/y+.webp" alt="HYPTEC HT">
+      <h3>Aion Y Plus</h3>
+      <p>419.000.000</p>
+      <a href="Y+.html" class="siulasi-btn">Selengkapnya  ></a>
+    </div>
+  </div>
+
+<div class="column">
+    <div class="card">
+        <img src="aion/ut.png" alt="HYPTEC HT">
+      <h3>Aion UT</h3>
+      <p>363.000.000</p>
+      <a href="UT.html" class="siulasi-btn">Selengkapnya  ></a>
+    </div>
+  </div>
+
+  </div>
+</div>
+  <!-- Card End -->
+</section>
+
+  <section>
     <div class="map-section">
         <div class="map-container"></div>
         <div class="dealer-info">
             <h2>Lokasi Showroom</h2>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.2553868392012!2d106.73657739999999!3d-6.111822700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1dda627b442f%3A0xb46c68d7a17e5bf!2sAION%20PIK!5e0!3m2!1sid!2sid!4v1709928859400" 
-                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            <p><strong>Alamat:</strong> Jl. Pantai Indah Selatan No.1 2, RT.2/RW.3, Kapuk Muara, Kec. Penjaringan, Jakarta, Daerah Khusus Ibukota Jakarta 14440</p>
-            <p><a href="https://www.google.com/maps/dir//aion+pik/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x2e6a1dda627b442f:0xb46c68d7a17e5bf?sa=X&ved=1t:3061&ictx=111" target="_blank">Lihat di Google Maps</a></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.899563184168!2d106.88064207474977!3d-6.144191093842782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f568a9157eb3%3A0xe6dc4a70e2717d9f!2sIndomobil%20Nissan%20Sunter!5e0!3m2!1sid!2sid!4v1758529847349!5m2!1sid!2sid" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p><strong>Alamat:</strong> Jl. Danau Sunter Selatan Blok O3 No.53-54 Sunter Jaya Tanjung Priok RT.10/RW.11 Sunter Jaya Tanjung Priok RT.10/RW.11 Sunter Jaya Tanjung Priok RT.10, RT.10/RW.11, Sunter Jaya, Sunt, North Jakarta City, Jakarta 14350</p>
+            <p><a href="https://www.google.com/maps/dir//Indomobil+Nissan+Sunter,+Jl.+Danau+Sunter+Selatan+Blok+O3+No.53-54+Sunter+Jaya+Tanjung+Priok+RT.10%2FRW.11+Sunter+Jaya+Tanjung+Priok+RT.10%2FRW.11+Sunter+Jaya+Tanjung+Priok+RT.10,+RT.10%2FRW.11,+Sunter+Jaya,+Sunt,+North+Jakarta+City,+Jakarta+14350/@-6.1441911,106.8806421,17z/data=!4m17!1m7!3m6!1s0x2e69f568a9157eb3:0xe6dc4a70e2717d9f!2sIndomobil+Nissan+Sunter!8m2!3d-6.1441911!4d106.883217!16s%2Fg%2F1tg97540!4m8!1m0!1m5!1m1!1s0x2e69f568a9157eb3:0xe6dc4a70e2717d9f!2m2!1d106.8832362!2d-6.144191!3e9?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">Lihat di Google Maps</a></p>
         </div>
     </div>
                     
+</section>
+
+<!-- Floating WhatsApp Button -->
+ <div class="popup">
+<a href="https://wa.me/6281380926572?text=Halo%20saya%20dapat%20No.%20ibu%20Ria%20%dRI%20WEB" 
+   class="whatsapp-float" 
+   target="_blank"
+   aria-label="Chat via WhatsApp">
+   <i class="bi bi-whatsapp whatsapp-icon"></i>
+</a>
+</div>
 
     <!-- <section class="form-container">
         <div class="form-box">
@@ -671,30 +864,41 @@
         </div>
     </section> -->
 
-    <footer class="footer">
+    <footer class="footer" id="footerr">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <img src="LOGO.png" alt="AION Logo" class="footer-logo">
-                    <p class="call-center" style="color: #ccc;">Edrick Devano</p>
-                    <i class="bi bi-whatsapp whatsapp-icon"></i>
-                    <a class="phone-number" href="https://wa.me/6288213303992?text=Halo%20saya%20ingin%20menanyakan%20mengenai%20mobil%20Aion%3A%0ANama%3A%0ATipe%20Mobil%3A" style="color: #ccc; text-decoration: none;">088213303992</a>
+                <div class="col-md-3">
+                    <img src="LOGO1.png" alt="AION Logo" class="footer-logo">
+                    <p class="call-center" style="color: #ccc;">RIA</p>
+                    <a class="phone-number" href="https://wa.me/6281380926572?text=Halo%20saya%20dapat%20No.%20ibu%20Ria%20%dRI%20WEB" style="color: #ccc; text-decoration: none;"><i class="bi bi-whatsapp whatsapp-icon">081380926572</i>
+                    </a>
                 </div>
-                <div class="col-md-4">
-                    <h5>Models</h5>
+                <div class="col-md-3">
+                    <h5>NISSAN</h5>
                     <ul class="footer-list">
-                        <a href="HYPTEC.html" style="color: #ccc; text-decoration: none;"><li>HYPTEC HT</li></a>
+                        <a href="serena.html" style="color: #ccc; text-decoration: none;"><li>Serena E-Power</li></a>
+                        <a href="xtrail.html" style="color: #ccc; text-decoration: none;"><li>X-Trail E-Power</li></a>
+                        <a href="magnite.html" style="color: #ccc; text-decoration: none;"><li>Magnite</li></a>
+                        <a href="terra.html" style="color: #ccc; text-decoration: none;"><li>Terra</li></a>
+                        <a href="kicks.html" style="color: #ccc; text-decoration: none;"><li>Kicks E-Power</li></a>
+                        <a href="livina.html" style="color: #ccc; text-decoration: none;"><li>Livina</li></a>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>AION</h5>
+                    <ul class="footer-list">
+                        <a href="HT.html" style="color: #ccc; text-decoration: none;"><li>HYPTEC HT</li></a>
                         <a href="v.html" style="color: #ccc; text-decoration: none;"><li>AION V</li></a>
                         <a href="Y plus.html" style="color: #ccc; text-decoration: none;"><li>AION Y Plus</li></a>
                         <a href="UT.html" style="color: #ccc; text-decoration: none;"><li>AION UT</li></a>
                     </ul>
                 </div>
-                <div class="col-md-4">
+
+                <div class="col-md-3">
                     <h5>Services</h5>
                     <ul class="footer-list">
-                        
-                            
-                        <li><a href="https://wa.me/6288213303992?text=Halo%20saya%20ingin%20test%20drive%20mobil%20%3A%0ANama%3A%0ANo. Telfon%3A%" target="_blank" class="test-drive-btn">🚗 Request For Test Drive</a></li>
+                        <li><a href="https://wa.me/6281380926572?text=Halo%20saya%20ingin%20test%20drive%20mobil%20%3A%0ANama%3A%0ANo. Telfon%3A" target="_blank" class="test-drive-btn">🚗 Request For Test Drive</a></li>
                         <li>Dealership Information</li>
                         <li>FAQ</li>
                     </ul>
